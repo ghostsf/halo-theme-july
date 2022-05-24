@@ -7,5 +7,5 @@ description: 七月流火，素而不简
 logo:
 website: https://ghostsf.com
 repo: https://github.com/ghostsf/halo-theme-july
-version: 1.0
-require: 1.4.3
+version: 1.3.4
+require: 1.5.0
