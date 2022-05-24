@@ -1015,7 +1015,7 @@ var LIlGGAttachContext = {
  * @param {Document} ele 失败的图片do
  */
 var imgError = function (ele) {
-  ele.src = "https://cdn.lixingyong.com/2020/07/18/98fca04416944b282a558b98b2131879.png";
+  ele.src = "https://cdn.ghostsf.com/blog/img-404.png";
 };
 
 /**
