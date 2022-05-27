@@ -1,5 +1,5 @@
 <#--
-    Template Name: links
+    Template Name: hot
 -->
 <#include "header.ftl">
 <@header title="${sheet.title!} - ${blog_title!}">
