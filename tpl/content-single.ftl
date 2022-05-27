@@ -19,6 +19,20 @@
         ${post.formatContent!}
         <p>Q.E.D. <i class="fa fa-meetup" aria-hidden="true" style="color:#d34836"></i></p>
     </div><!-- .entry-content -->
+
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9937192623475080"
+       crossorigin="anonymous"></script>
+  <!-- ad博客文章页底部 -->
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-9937192623475080"
+       data-ad-slot="6708009465"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
     <#if settings.alipay_code?? || settings.wechat_code??>
     <div class="single-reward">
         <div class="reward-open"><span class="i18n" data-iname="post.reward"></span>

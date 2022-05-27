@@ -20,6 +20,20 @@
 <#if settings.top_feature!true>
 	<#include "layouts/feature.ftl">
 </#if>
+<div class="top-feature">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9937192623475080"
+     crossorigin="anonymous"></script>
+<!-- ad首页横向方 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9937192623475080"
+     data-ad-slot="6815820674"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
