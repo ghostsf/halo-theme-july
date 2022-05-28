@@ -1,0 +1,329 @@
+sns:
+  label: 社交资料
+  items:
+    rss:
+      name: rss
+      label: RSS
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    twitter:
+      name: twitter
+      label: Twitter
+      type: text
+      placeholder: '只需填入 Twitter 用户名即可'
+    email:
+      name: email
+      label: Email
+      type: text
+      placeholder: '只需填入邮箱地址即可'
+    github:
+      name: github
+      label: Github
+      type: text
+      placeholder: '只需填入 Github 用户名即可'
+    qq:
+      name: qq
+      label: QQ
+      type: text
+      placeholder: '只需填入 QQ 号即可'
+    telegram:
+      name: telegram
+      label: Telegram
+      type: text
+      placeholder: '只需填入 Telegram Id 即可'
+body:
+  label: 主体设置
+  items:
+    background_picture:
+      name: background_picture
+      label: body背景图片
+      type: attachment
+    background_picture_night:
+      name: background_picture_night
+      label: 暗色模式body背景图片
+      type: attachment
+    slogan_text:
+      name: slogan_text
+      label: slogan
+      type: text
+      default: ''
+      placeholder: '默认为博客标题'
+      description: '建议使用英文字符，因为字体库只支持了英文字母及英文标点符号'
+    slogan_text_color:
+      name: slogan_text_color
+      label: slogan字体颜色
+      type: color
+      default: '#ff9800'
+    sitebar_img:
+      name: sitebar_img
+      label: '侧边栏图片'
+      type: attachment
+    evanyou:
+      name: evanyou
+      label: 背景彩条动效
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    night_mode_enabled:
+      name: night_mode_enabled
+      label: 开启黑夜模式
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+sidebar:
+  label: 侧栏
+  items:
+    sidebar_nickname_isopen:
+      name: sidebar_nickname_isopen
+      label: 开启侧栏图片内的文字
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    sidebar_nickname_prefix:
+      name: sidebar_nickname_prefix
+      label: 侧栏图片内的文字前缀
+      type: text
+      default: '可爱的'
+    sidebar_nickname:
+      name: sidebar_nickname
+      label: 侧栏图片内的昵称
+      type: text
+      description: '为空时默认使用后台 用户-个人资料 里设置的昵称'
+    sidebar_description:
+      name: sidebar_description
+      label: 侧栏中的一句话
+      type: text
+      placeholder: '你能抓到我么？'
+sidebar_key:
+  label: 侧栏其他资料
+  items:
+    sidebar_key1:
+      name: sidebar_key1
+      label: sidebar_key1
+      type: text
+      description: '如果需要使用此功能，此项必填'
+    sidebar_value1:
+      name: sidebar_value1
+      label: sidebar_value1
+      type: textarea
+      description: '如果需要使用此功能，此项必填'
+    sidebar_key2:
+      name: sidebar_key2
+      label: sidebar_key2
+      type: text
+      description: '选填'
+    sidebar_value2:
+      name: sidebar_value2
+      label: sidebar_value2
+      type: textarea
+      description: '选填'
+    sidebar_key3:
+      name: sidebar_key3
+      label: sidebar_key3
+      type: text
+      description: '选填'
+    sidebar_value3:
+      name: sidebar_value3
+      label: sidebar_value3
+      type: textarea
+      description: '选填'
+    sidebar_key4:
+      name: sidebar_key4
+      label: sidebar_key4
+      type: text
+      description: '选填'
+    sidebar_value4:
+      name: sidebar_value4
+      label: sidebar_value4
+      type: textarea
+      description: '选填'
+    sidebar_key5:
+      name: sidebar_key5
+      label: sidebar_key5
+      type: text
+      description: '选填'
+    sidebar_value5:
+      name: sidebar_value5
+      label: sidebar_value5
+      type: textarea
+      description: '选填'
+menu:
+  label: 菜单图标设置
+  items:
+    foo:
+      name: foo
+      label: 菜单图标设置方法
+      placeholder: '这里不用填，请看下方教程步骤'
+      description: '1.去后台 外观-菜单-左侧更多选项<br/>2.在图标输入框输入 &lt;i class="fa fa-xxxxx"&gt;&lt;/i&gt;<br/>3.其中的xxxxx替换成想要显示的图标名称<br/>4.图标名称在 http://www.fontawesome.com.cn/faicons'
+foot:
+  label: 底部设置
+  items:
+    blog_ran_time:
+      name: blog_ran_time
+      label: '站点运行时间统计'
+      type: text
+      description: '填入起始时间，格式：月/日/年 时:分:秒，如01/01/2020 12:00:00'
+    icp:
+      name: icp
+      label: 'ICP 备案号'
+      type: text
+      placeholder: '填入 ICP 备案号，没有则不填. '
+archives:
+  label: 归档页设置
+  items:
+    archives_include_categories:
+      name: archives_include_categories
+      label: '是否包含分类'
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+links:
+  label: 友链页设置
+  items:
+    links_grouping:
+      name: links_grouping
+      label: 友链分组
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    links_random:
+      name: links_random
+      label: 友链顺序随机
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+comment:
+  label: 评论设置
+  items:
+    comment_internal_plugin_js_enable:
+      name: comment_internal_plugin_js_enable
+      label: 使用系统设置评论模块JS
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+      description: '使用Halo后台自定义评论模块则开启，使用主题自带评论模块则关闭'
+other:
+  label: 其他设置
+  items:
+    pjax_enabled:
+      name: pjax_enabled
+      label: 开启 Pjax
+      description: '如果开启了背景音乐建议开启 pjax'
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    music_enabled:
+      name: music_enabled
+      label: 左下角音乐播放器
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    music_source:
+      name: music_source
+      label: 音乐播放器播放源
+      type: select
+      default: netease
+      options:
+        - value: netease
+          label: 网易云音乐
+        - value: tencent
+          label: QQ音乐
+        - value: kugou
+          label: 酷狗音乐
+        - value: xiami
+          label: 虾米音乐
+        - value: baidu
+          label: 百度音乐
+    list_id:
+      name: list_id
+      label: 音乐播放器歌单ID
+      type: text
+      placeholder: '歌单ID'
+      description: '默认为网易云音乐热歌榜'
+    sort_by:
+      name: sort_by
+      label: 歌单排序方式
+      default: 'list'
+      type: select
+      options:
+        - value: random
+          label: 随机
+        - value: list
+          label: 顺序
+    auto_play:
+      name: auto_play
+      label: 自动播放
+      default: false
+      type: radio
+      data-type: bool
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    back_to_top:
+      name: back_to_top
+      label: 返回顶部样式
+      type: select
+      default: cat
+      options:
+        - value: cat
+          label: 小猫
+        - value: iron_man
+          label: 钢铁侠
+    custom:
+      name: custom
+      label: 自定义样式
+      type: textarea
+      placeholder: '不需要 <style></style> 标签'
