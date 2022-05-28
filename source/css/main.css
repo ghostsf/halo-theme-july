@@ -4251,7 +4251,8 @@ a {
 }
 
 .links-of-author-item i span {
-    color: rgba(0, 0, 0, .5)
+    color: rgba(0, 0, 0, .5);
+    font-family: initial;
 }
 
 .links-of-author-item .fa-globe {

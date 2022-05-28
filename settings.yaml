@@ -168,14 +168,6 @@ sidebar_key:
       label: sidebar_value5
       type: textarea
       description: '选填'
-menu:
-  label: 菜单图标设置
-  items:
-    foo:
-      name: foo
-      label: 菜单图标设置方法
-      placeholder: '这里不用填，请看下方教程步骤'
-      description: '1.去后台 外观-菜单-左侧更多选项<br/>2.在图标输入框输入 &lt;i class="fa fa-xxxxx"&gt;&lt;/i&gt;<br/>3.其中的xxxxx替换成想要显示的图标名称<br/>4.图标名称在 http://www.fontawesome.com.cn/faicons'
 foot:
   label: 底部设置
   items:
@@ -312,16 +304,12 @@ other:
           label: 开启
         - value: false
           label: 关闭
-    back_to_top:
-      name: back_to_top
-      label: 返回顶部样式
-      type: select
-      default: cat
-      options:
-        - value: cat
-          label: 小猫
-        - value: iron_man
-          label: 钢铁侠
+    pic_url:
+      name: pic_url
+      label: 返回顶部图片
+      type: text
+      default: 'https://cdn.ghostsf.com/blog/space-to-top.png'
+      placeholder: '图片完整链接'
     custom:
       name: custom
       label: 自定义样式
