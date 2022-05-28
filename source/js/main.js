@@ -44,27 +44,29 @@ const sagiri = {
             });
         });
     },
-    back_to_top: function () {
-        $.scrollto = function (scrolldom, scrolltime) {
-            $(scrolldom).click(function () {
-                $(this).addClass("active").siblings().removeClass("active");
-                $('html, body').animate({
-                    scrollTop: $('body').offset().top
-                }, scrolltime);
-                return false;
-            });
+    back_to_top : function () {
+        function e(e, t, o) {
+            200 < $(window).scrollTop() && e.css("bottom") === t ? e.css({
+                bottom: o,
+                display: "block",
+                opacity: 1
+            }) : $(window).scrollTop() <= 200 && e.css("bottom") != t && e.css({
+                bottom: t,
+                display: "none",
+                opacity: 0
+            })
+        }
+        $.scrollto = function (e, t) {
+            $(e).click(function () {
+                return $("html, body").animate({
+                    scrollTop: $("body").offset().top
+                }, t), !1
+            })
         };
-        var backTo = $(".back-to-top");
-        var windowHeight = $(window).height();
-        var height = windowHeight > 980 ? 980 : windowHeight;
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > 700 && backTo.css('top') === '-900px') {
-                backTo.css('top', height - 980 + 'px');
-            } else if ($(window).scrollTop() <= 700 && backTo.css('top') !== '-900px') {
-                backTo.css('top', '-900px');
-            }
-        });
-        $.scrollto(".back-to-top", 800);
+        var t = $(".back-to-top");
+        e(t, "-100px", "48.45px"), $(window).scroll(function () {
+            e(t, "-100px", "48.45px")
+        }), $.scrollto(".back-to-top", 800)
     },
     blogRanTime: function (now, start) {
         /**

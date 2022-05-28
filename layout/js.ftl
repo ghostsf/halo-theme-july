@@ -12,7 +12,6 @@
 <script src="${theme_base!}/source/lib/fancybox/jquery.fancybox.min.js?v=${theme.version!}"
         type="text/javascript"></script>
 <script src="${theme_base!}/source/js/main.js?v=${theme.version!}" type="text/javascript"></script>
-<script src="${theme_base!}/source/js/animate.js?v=${theme.version!}" type="text/javascript"></script>
 <#if settings.comment_internal_plugin_js_enable!false>
     <script src="${options.comment_internal_plugin_js!'https://unpkg.com/halo-comment-yu@latest/dist/halo-comment.min.js'}?v=${theme.version!}"
             type="text/javascript"></script>
