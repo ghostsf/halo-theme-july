@@ -21,7 +21,7 @@
         <p>
             Power by <a href="https://halo.run" target="_blank" class="external" rel="nofollow"> Halo</a> · Theme by
             <a href="https://github.com/ghostsf/halo-theme-july" target="_blank" class="external" rel="nofollow">
-                Sagiri
+                July
             </a>
         </p>
     </div>
