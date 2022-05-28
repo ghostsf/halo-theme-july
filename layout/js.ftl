@@ -13,10 +13,10 @@
         type="text/javascript"></script>
 <script src="${theme_base!}/source/js/main.js?v=${theme.version!}" type="text/javascript"></script>
 <#if settings.comment_internal_plugin_js_enable!false>
-    <script src="${options.comment_internal_plugin_js!'https://unpkg.com/halo-comment-yu@latest/dist/halo-comment.min.js'}?v=${theme.version!}"
+    <script src="${options.comment_internal_plugin_js!'https://npm.elemecdn.com/halo-comment-yu@latest/dist/halo-comment.min.js'}?v=${theme.version!}"
             type="text/javascript"></script>
 <#else>
-    <script src="https://unpkg.com/halo-comment-yu@latest/dist/halo-comment.min.js?v=${theme.version!}"
+    <script src="https://npm.elemecdn.com/halo-comment-yu@latest/dist/halo-comment.min.js?v=${theme.version!}"
             type="text/javascript"></script>
 </#if>
 <#if settings.pjax_enabled!false>
